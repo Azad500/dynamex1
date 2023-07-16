@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamex</title>
+    <link rel="stylesheet" href="./dynamex.css" />
+    <link rel="stylesheet" href="./dynamex_responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
+      integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- ----------------first_navbar---------------- -->
+      <nav>
+        <div class="left_nav_side">
+          <div class="nav_number_and_call_icon">
+            <i class="fa-solid fa-phone"></i>
+            <p>*7171</p>
+          </div>
+          <a href="#">Daşınması qadağan olan məhsullar</a>
+          <a href="#">Tez-tez verilən suallar</a>
+        </div>
+        <div class="right_nav_side">
+          <select name="language" id="language">
+            <option value="#">AZ</option>
+            <option value="#">EN</option>
+            <option value="#">RU</option>
+          </select>
+          <p>Daxil ol</p>
+          <button>Qeydiyyat</button>
+        </div>
+      </nav>
+      <!-- ----------------second_navbar--------------- -->
+      <div class="second_nav">
+        <div>
+          <img src="./dynamex_logo.svg" alt="dynamex_logo" />
+          <div class="menu_text">
+            <a href="#">Haqqımızda</a>
+            <a href="#">Xidmətlər</a>
+            <a href="#">Tariflər</a>
+            <a href="#">Mağazalar</a>
+            <a href="#">Yeniliklər</a>
+            <a href="#">Əlaqə</a>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-cart-shopping"
+              style="color: rgb(237, 3, 3)"
+            ></i>
+            <a href="daxilol.html" target="_blank"><button>Daxil ol</button></a>
+            <i class="fa-solid fa-bars" style="color: #050505"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ----------------adds---------------------- -->
+      <div id="slider-wrapper">
+        <div class="inner-wrapper">
+          <input
+            checked
+            type="radio"
+            name="slide"
+            class="control"
+            id="Slide1"
+          />
+          <label for="Slide1" id="s1"></label>
+          <input type="radio" name="slide" class="control" id="Slide2" />
+          <label for="Slide2" id="s2"></label>
+          <input type="radio" name="slide" class="control" id="Slide3" />
+          <label for="Slide3" id="s3"></label>
+          <input type="radio" name="slide" class="control" id="Slide4" />
+          <label for="Slide4" id="s4"></label>
+          <div class="overflow-wrapper">
+            <a class="slide" href=""
+              ><img
+                src="https://dynamex.az/frontend/web/uploads//images/new/2022-10-08-145232.jpg"
+            /></a>
+            <a class="slide" href=""
+              ><img
+                src="https://dynamex.az/frontend/web/uploads//images/new/xirdalansaytnew.png"
+            /></a>
+            <a class="slide" href=""
+              ><img
+                src="https://dynamex.az/frontend/web/uploads//images/blog/Deniz-sezonu-2.jpg"
+            /></a>
+            <a class="slide" href=""
+              ><img
+                src="https://dynamex.az/frontend/web/uploads//images/new/Dynamex-Gnc-filialn-acd-Turkiydn-catdrlma.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------icons-------------------- -->
+      <div class="icons_container">
+        <p>Necə işləyir?</p>
+        <div class="icons_wrapper">
+          <div class="icons_child ic_first">
+            <button><i class="fa-solid fa-bag-shopping fa-beat"></i></button>
+            <p>Necə sifariş edim?</p>
+            <p>Məhsulu secin</p>
+            <p>Ödəniş edin</p>
+            <p>Məhsulu biz alırıq</p>
+            <p>Yaxud bəyan edin</p>
+            <a href="first_more.html">Daha çox</a>
+          </div>
+          <div class="icons_child ic_second">
+            <button><i class="fa-solid fa-wallet fa-beat"></i></button>
+            <p>Necə sifariş edim?</p>
+            <p>Məhsulu secin</p>
+            <p>Ödəniş edin</p>
+            <p>Məhsulu biz alırıq</p>
+            <p>Yaxud bəyan edin</p>
+            <a href="first_more.html">Daha çox</a>
+          </div>
+          <div class="icons_child ic_third">
+            <button><i class="fa-solid fa-plane fa-spin"></i></button>
+            <p>Necə sifariş edim?</p>
+            <p>Məhsulu secin</p>
+            <p>Ödəniş edin</p>
+            <p>Məhsulu biz alırıq</p>
+            <p>Yaxud bəyan edin</p>
+            <a href="first_more.html">Daha çox</a>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------calculate_container--------------- -->
+      <div class="calculate_container">
+        <div>
+          <p>Kalkulyator</p>
+          <p>
+            Bağlamanın hər hansı bir tərəfinin ölçüsü (Türkiyə) 60 sm (Amerika)
+            80 sm və daha çox olarsa, bağlamanın həm həcm, həm də fiziki çəkisi
+            hesablanır. Hansı çəki yüksək olarsa, daşınma haqqı ona əsasən
+            hesablanır.
+          </p>
+        </div>
+        <form>
+          <!-- ----------------first_row---------------------- -->
+          <select name="Ölkə" id="country" required>
+            <label>Ölkə</label>
+            <option value="#">Türkiyə</option>
+            <option value="#">Azərbaycan</option>
+          </select>
+          <!-- ----------------second_row----------------------- -->
+          <div class="address_and_types_container">
+            <div class="address_child">
+              <select name="adress" id="address" required>
+                <option value="#">Birbaşa ünvana çatdırılma</option>
+                <option value="#">Filiala çatdırılma</option>
+              </select>
+            </div>
+            <div class="types_child">
+              <select name="type" id="types">
+                <option value="#">Maye və kosmetik</option>
+                <option value="#">Adi məhsul</option>
+              </select>
+            </div>
+          </div>
+          <!-- ----------------third_row---------------------- -->
+          <div class="metres_container">
+            <div class="wide">
+              <input type="number" name="wides" id="wide" placeholder="En" />
+              <button>sm</button>
+            </div>
+            <div class="long">
+              <input
+                type="number"
+                name="longs"
+                id="long"
+                placeholder="Uzunluq"
+              />
+              <button>sm</button>
+            </div>
+          </div>
+          <!-- ----------------fourth_row---------------------- -->
+          <div class="height_and_weight_container">
+            <div class="height_child">
+              <input
+                type="number"
+                name="heights"
+                id="height"
+                placeholder="Hündürlük"
+              />
+              <button>sm</button>
+            </div>
+            <div class="weight_child">
+              <input
+                type="number"
+                name="heights"
+                id="height"
+                placeholder="Çəki"
+              />
+              <select name="kq_q" id="kq_and_q">
+                <option value="#" id="kq">kq</option>
+                <option value="#" id="qr">q</option>
+              </select>
+            </div>
+          </div>
+          <!-- ----------------account_container----------------------- -->
+          <div class="account_container">
+            <input type="submit" name="hesabla" id="account" value="Hesabla" />
+          </div>
+          <!-- -----------------result_block------------------ -->
+          <div class="result_block">
+            <p><b>$</b> 0.00</p>
+          </div>
+        </form>
+        <!-- ----------------result_none-------------------------------- -->
+        <div id="result">
+          <p><b>$</b> 0.00</p>
+        </div>
+      </div>
+      <!-- ----------------rates_container---------------- -->
+      <div class="rates_container">
+        <p class="rates_text">Tariflər</p>
+        <div class="rates_wrapper">
+          <div class="rates_child_text">
+            <p class="filial">Filiala çatdırılma</p>
+            <p>Birbaşa ünvana çatdırılma</p>
+          </div>
+          <div class="rates_flex_container">
+            <div class="turk_and_usa_buttons">
+              <p>Ölkələr üzrə</p>
+              <div class="money_container">
+                <button class="turkish">Türkiyə</button>
+                <button class="USA">ABŞ</button>
+              </div>
+            </div>
+            <div class="rates_child">
+              <!-- ----------------borders_container-------------------- -->
+              <!-- -------------1-------------- -->
+              <div class="borders_container">
+                <div>
+                  <p class="first_write">0.001 kq-dan 0.100 kq qədər</p>
+                </div>
+                <div class="flex_text">
+                  <div class="left_side">
+                    <p class="pale_text">Adi məhsul</p>
+                    <p>1.00 usd</p>
+                  </div>
+                  <div class="right_side">
+                    <p class="pale_text">Maye və kosmetik</p>
+                    <p>1.00 usd</p>
+                  </div>
+                </div>
+              </div>
+              <!-- --------------2----------------- -->
+              <div class="borders_container">
+                <div>
+                  <p class="first_write">0.101 kq-dan 0.25 kq qədər</p>
+                </div>
+                <div class="flex_text">
+                  <div class="left_side">
+                    <p class="pale_text">Adi məhsul</p>
+                    <p>2.00 usd</p>
+                  </div>
+                  <div class="right_side">
+                    <p class="pale_text">Maye və kosmetik</p>
+                    <p>2.00 usd</p>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------3----------------- -->
+              <div class="borders_container">
+                <div>
+                  <p class="first_write">0.251 kq-dan 0.500 kq qədər</p>
+                </div>
+                <div class="flex_text">
+                  <div class="left_side">
+                    <p class="pale_text">Adi məhsul</p>
+                    <p>3.00 usd</p>
+                  </div>
+                  <div class="right_side">
+                    <p class="pale_text">Maye və kosmetik</p>
+                    <p>3.00 usd</p>
+                  </div>
+                </div>
+              </div>
+              <!-- ---------------4--------------- -->
+              <div class="borders_container">
+                <div>
+                  <p class="first_write">0.501 kq-dan 0.75 kq qədər</p>
+                </div>
+                <div class="flex_text">
+                  <div class="left_side">
+                    <p class="pale_text">Adi məhsul</p>
+                    <p>3.50 usd</p>
+                  </div>
+                  <div class="right_side">
+                    <p class="pale_text">Maye və kosmetik</p>
+                    <p>3.50 usd</p>
+                  </div>
+                </div>
+              </div>
+              <!-- --------------5--------------- -->
+              <div class="borders_container">
+                <div>
+                  <p class="first_write">0.751 kq-dan 1 kq qədər</p>
+                </div>
+                <div class="flex_text">
+                  <div class="left_side">
+                    <p class="pale_text">Adi məhsul</p>
+                    <p>3.90 usd</p>
+                  </div>
+                  <div class="right_side">
+                    <p class="pale_text">Maye və kosmetik</p>
+                    <p>3.90 usd</p>
+                  </div>
+                </div>
+              </div>
+              <!-- -----------------6---------------- -->
+              <div class="borders_container">
+                <div>
+                  <p class="first_write">
+                    1 kq-dan 5 kq qədər(Hər kiloqram üçün)
+                  </p>
+                </div>
+                <div class="flex_text six_borders_flex_text">
+                  <div class="left_side six_left_side">
+                    <p class="pale_text">Adi məhsul</p>
+                    <p>3.90 usd</p>
+                  </div>
+                  <div class="right_side six_right_side">
+                    <p class="pale_text">Maye və kosmetik</p>
+                    <p>3.90 usd</p>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------------7---------------- -->
+              <div class="borders_container">
+                <div>
+                  <p class="first_write">5 kq və üstü (Hər kiloqram üçün)</p>
+                </div>
+                <div class="flex_text">
+                  <div class="left_side">
+                    <p class="pale_text">Adi məhsul</p>
+                    <p>3.50 usd</p>
+                  </div>
+                  <div class="right_side">
+                    <p class="pale_text">Maye və kosmetik</p>
+                    <p>3.50 usd</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------------news--------------- -->
+      <div class="news_container">
+        <div class="news_wrapper_first">
+          <div class="news_child">
+            <h3>Yeniliklər və xəbərlər</h3>
+            <p>
+              Xidmətlərimizlə bağlı ən son yeniliklər və müxtəlif mövzularda
+              mətumatlandırıcı bloqlar burada!
+            </p>
+          </div>
+          <p>Hamısı <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+        <div class="news_wrapper_second">
+          <div>
+            <img src="./hepsiburasa-sifariset.png" alt="zero" />
+            <p>
+              Hepsiburada.com-dan "Sifariş Et" ilə sifarişlərə 0% komissiya!
+            </p>
+            <pre>08.07.2023</pre>
+          </div>
+          <div>
+            <img src="./dynamex-blog001.png" alt="blog" />
+            <p>Türkiyədə endirimli məhsulları sizin üçün seçdik</p>
+            <pre>05.07.2023</pre>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------left_and_right_arrays-------------- -->
+      <div class="arrows_container">
+        <button class="arrow_wrapper">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="arrow_wrapper">
+          <i class="fa-solid fa-chevron-left fa-rotate-180"></i>
+        </button>
+      </div>
+      <!-- ------------------all_write_container------------- -->
+      <div class="all_write_container">
+        <a href="allwrite.html" target="_blank"
+          >Hamısı <i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </div>
+      <!-- ----------------youtube----------------- -->
+      <div class="youtube_container">
+        <div>
+          <h3>Youtube-də bizi izləyin</h3>
+          <div>
+            <img src="./youtube.png" alt="youtube" />
+          </div>
+        </div>
+        <div class="photo_pagenation">
+          <div class="photoss">
+            <img
+              src="https://i.ytimg.com/vi/pYd-4vRPXgU/maxresdefault.jpg"
+              alt="girl"
+            />
+            <img
+              src="https://dynamex.az/frontend/web/uploads//images/new/Video%20telimat/Yeni-qapaq.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <p>#LeylaCavablayır Tracking <span>ID nədir?</span></p>
+            <p>#LeylaCavablayır Noyabr - endirimlər ayı</p>
+          </div>
+          <button class="left_arrow">
+            <i class="fa-solid fa-arrow-right fa-rotate-180"></i>
+          </button>
+          <button class="right_arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- ---------------------slide_markets----------------- -->
+      <div class="slide_container">
+        <div class="slide_wrapper lc-waikki">
+          <img
+            src="https://media.licdn.com/dms/image/C4D0BAQEEXEAovAVmIQ/company-logo_200_200/0/1679321242111?e=2147483647&v=beta&t=ueC8oBbXnyv6h32h5TIyMJZdohuoKFsmICEANtScyLI"
+            alt="lc-waikki"
+          />
+        </div>
+        <div class="slide_container pierre_cardin">
+          <img
+            src="https://i.pinimg.com/originals/73/3f/a4/733fa478ac7477dc6b31ea2f610ad551.jpg"
+            alt="pierre_cardin"
+          />
+        </div>
+        <div class="slide_container trendyol">
+          <img
+            src="https://cdnuploads.aa.com.tr/uploads/sirkethaberleri/Contents/2020/11/08/thumbs_b_c_7b9892fe32dc63488e9118fd16240798.jpg"
+            alt="trendyol"
+          />
+        </div>
+        <div class="slide_wrapper mango">
+          <img
+            src="https://logowik.com/content/uploads/images/mango9960.logowik.com.webp"
+            alt="Mango"
+          />
+        </div>
+        <div class="slide_wrapper">
+          <img
+            src="https://ams3.digitaloceanspaces.com/outletcenter/2019/03/13.png"
+            alt="defacto"
+          />
+        </div>
+      </div>
+    </main>
+    <!-- -------------------footer----------------- -->
+    <footer>
+      <div class="flex_container">
+        <!-- ----------------left_side---------------- -->
+        <div class="left_flex_side">
+          <div class="flex_logo">
+            <img src="./dynamex_logo.svg" alt="logo" />
+          </div>
+          <div class="footer_first_text">
+            <i class="fa-regular fa-copyright"></i>
+            <p>2023 Dynamex.az. Bütün hüquqlar qorunur</p>
+          </div>
+          <div class="social_icons">
+            <button><i class="fa-brands fa-facebook-f"></i></button>
+            <button><i class="fa-brands fa-twitter"></i></button>
+            <button><i class="fa-brands fa-instagram"></i></button>
+            <button><i class="fa-brands fa-youtube"></i></button>
+          </div>
+        </div>
+        <!-- ---------------middle----------------- -->
+        <div class="middle_flex_container">
+          <div class="middle_flex_wrapper">
+            <div class="menu_footer">
+              <h3>Menu</h3>
+              <p>Haqqımızda</p>
+              <p>Xidmətlər</p>
+              <p>Tariflər</p>
+              <p>Mağazalar</p>
+              <p>Yeniliklər</p>
+              <p>Əlaqə</p>
+            </div>
+            <div class="help_footer">
+              <h3>Kömək</h3>
+              <p>Tez-tez verilən suallar</p>
+              <p>Şərtlər</p>
+              <p>Gizlilik siyasəti</p>
+              <p>İstifadəçi Razılaşması</p>
+              <p>Yeniliklər</p>
+            </div>
+          </div>
+        </div>
+        <!-- -----------------right_side---------------- -->
+        <div class="right_flex_side">
+          <h3>Əlaqə</h3>
+          <div class="footer_all_menu">
+            <div class="footer_address_and_map_icon f-m">
+              <div class="map_icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="footer_address_texts">
+                <p>28 may, Dəmir yolu vağzalı 2-ci mərtəbə AZ 1020</p>
+                <p>Gəncə ş., AZ 2013 Kəpəz r-nu, N.Nərimanov pr, 42C,</p>
+                <p>Sumqayıt ş,H.Əliyev pr,493-503,14 mərtəbənin yanı.</p>
+                <p>Xalqlar Dostluğu,İsmayıl Məmmədov küçəsi 6,AZ1142</p>
+                <p>Yasamal,A,M,Şərifzadə küç,Şəbəkə xidmət mərkəzi AZ1138</p>
+                <p>Xırdalan ş. H. Əliyev pr. 11, Kristal Abşeron 2</p>
+                <p>Əhmədli Ukrayna dairəsi, Gəncə pr, Vunq Tau küç 2</p>
+                <p>Bakıxanov qəs., S, Qocayev küç , AZ1132-ın yanı</p>
+                <p>
+                  M.Əcəmi: Cavadxan küçəsi, 17. (Euromed klinikasının yanında)
+                </p>
+              </div>
+            </div>
+            <div class="footer_message_and_contact f-m">
+              <i class="fa-regular fa-envelope"></i>
+              <p>
+                Problemli şöbə ilə əlaqə:info@dynamex.az Əməkdaşlıq üçün
+                :hr@dynamex.az
+              </p>
+            </div>
+            <div class="footer_number_and_call_icon f-m">
+              <i class="fa-solid fa-phone"></i>
+              <p>*7171</p>
+            </div>
+            <!-- --------------button_container------------- -->
+            <div class="button_container">
+              <button class="g-a-play g-play">
+                <div>
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <div>
+                  <p>GET IT ON</p>
+                  <p><b>Google</b> play</p>
+                </div>
+              </button>
+              <button class="g-a-play">
+                <div>
+                  <i class="fa-brands fa-apple"></i>
+                </div>
+                <div>
+                  <p>Download on the</p>
+                  <p><b>APP STORE</b></p>
+                </div>
+              </button>
+            </div>
+            <!-- ----------------footer_last_text_and_icon------------- -->
+            <div class="footer_last_text_and_icon f-m">
+              <i class="fa-regular fa-copyright"></i>
+              <p>2023 Dynamex.az. Bütün hüquqlar qorunur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./dynamex.js"></script>
+  </body>
+</html>

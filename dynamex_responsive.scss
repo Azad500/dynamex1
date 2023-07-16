@@ -1,0 +1,795 @@
+@media screen and (min-width: 396px) {
+  body {
+    main {
+      //<!-- ----------------rates_container---------------- -->
+      .rates_container {
+        .rates_wrapper {
+          .rates_child_text {
+            display: flex;
+            align-items: center;
+            p:last-child {
+              padding-top: 30px;
+              padding-right: 20px;
+              color: gray;
+            }
+          }
+          .rates_child {
+            .borders_container {
+              .flex_text {
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media screen and (min-width: 500px) {
+  body {
+    main {
+      #slider-wrapper {
+        width: 100%;
+        height: 250px;
+        margin: 50px auto;
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      .inner-wrapper {
+        width: 100%;
+        min-height: 250px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+// ----------------------------------------------------
+@media screen and (min-width: 610px) {
+  body {
+    main {
+      //<!-- ---------------------slide_markets----------------- -->
+      .slide_container {
+        .lc-waikki {
+          margin-left: 30px;
+        }
+        .pierre_cardin {
+          display: block;
+          img {
+            width: 80px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 25px 0;
+          }
+        }
+      }
+    }
+  }
+}
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media screen and (min-width: 700px) {
+  body {
+    main {
+      #slider-wrapper {
+        width: 100%;
+        height: 300px;
+        margin: 50px auto;
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      .inner-wrapper {
+        width: 100%;
+        min-height: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+// -------------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media screen and (min-width: 768px) {
+  body {
+    header {
+      // ------------second_nav------------
+      .second_nav {
+        div {
+          img {
+            width: 200px;
+          }
+        }
+      }
+    }
+    main {
+      // ---------------calculate--------------
+      .calculate_container {
+        form {
+          //  ----------second_row-----------
+          .address_and_types_container {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            .address_child {
+              width: 50%;
+            }
+            .types_child {
+              width: 50%;
+              margin-right: -35px;
+            }
+          }
+          //   -----------third_row-----------
+          .metres_container {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            .wide {
+              width: 45%;
+            }
+            .long {
+              width: 45%;
+            }
+          }
+          .height_and_weight_container {
+            display: flex;
+            justify-content: space-between;
+            .height_child {
+              width: 45%;
+            }
+            .weight_child {
+              width: 45%;
+            }
+          }
+        }
+      }
+      // <!-- ----------------rates_container---------------- -->
+      .rates_container {
+        .rates_text {
+          padding-top: 100px;
+        }
+        .rates_wrapper {
+          .rates_child_text {
+            width: 50%;
+            margin: auto;
+          }
+          .rates_child {
+            //<!-- ----------------borders_container-------------------- -->
+            // -------------1-------------- -->
+            .borders_container {
+              display: flex;
+              justify-content: space-between;
+              height: 100px;
+              div:first-child {
+                width: 40%;
+              }
+              .flex_text {
+                width: 60%;
+                padding-top: 20px;
+                margin-left: 30px;
+              }
+            }
+          }
+        }
+      }
+      // ----------------news------------------
+      .news_container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        .news_wrapper_first {
+          width: 30%;
+        }
+        .news_wrapper_second {
+          width: 70%;
+          div:first-child {
+            margin-left: 50px;
+            img {
+              width: 80%;
+            }
+          }
+          div:last-child {
+            margin-left: 50px;
+            img {
+              width: 80%;
+            }
+          }
+        }
+      }
+      // -------------youtube-----------------
+      .youtube_container {
+        .photo_pagenation {
+          .photoss {
+            width: 85%;
+            display: flex;
+            img:first-child {
+              width: 50%;
+              margin: 0;
+            }
+            img:last-child {
+              display: block;
+              width: 50%;
+              padding-left: 20px;
+            }
+          }
+          div:nth-child(2) {
+            display: flex;
+            width: 100%;
+            p:first-child {
+              display: inline-block;
+              width: 50%;
+              font-size: 16px;
+              padding: 10px 0 0 40px;
+              font-weight: bold;
+              span {
+                display: inline-block;
+              }
+            }
+            p:last-child {
+              width: 50%;
+              display: block;
+              font-size: 16px;
+              padding: 10px 0 0 20px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      //<!-- ---------------------slide_markets----------------- -->
+      .slide_container {
+        .trendyol {
+          display: block;
+          img {
+            width: 80px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 15px 0;
+          }
+        }
+      }
+    }
+    //<!-- -------------------footer----------------- -->
+    footer {
+      .flex_container {
+        width: 60%;
+        margin: auto;
+        // ------------middle--------------
+        .middle_flex_container {
+          text-align: center;
+        }
+        // ------------right_side---------------
+        .right_flex_side {
+          .footer_all_menu {
+            .footer_number_and_call_icon {
+              display: flex;
+              justify-content: center;
+            }
+            // <!-- --------------button_container------------- -->
+            .button_container {
+              width: 80%;
+              margin: auto;
+            }
+            //<!-- ----------------footer_last_text_and_icon------------- -->
+            .footer_last_text_and_icon {
+              width: 80%;
+              margin: 20px auto 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// -----------------------------------------------------
+// -----------------------------------------------------
+// -----------------------------------------------------
+@media screen and (min-width: 769px) {
+  // ----------------news------------------
+  body {
+    main {
+      //<!-- ----------------icons-------------------- -->
+      .icons_container {
+        .icons_wrapper {
+          display: flex;
+        }
+      }
+      .news_container {
+        padding-bottom: 40px;
+        .news_wrapper_first {
+          p {
+            display: block;
+            padding: 20px 0;
+            padding-left: 20px;
+          }
+          .news_child {
+            text-align: start;
+            h3 {
+              font-size: 30px;
+              padding-left: 20px;
+            }
+            p {
+              display: block;
+            }
+          }
+        }
+        .news_wrapper_second {
+          display: flex;
+          div:first-child {
+            margin-left: 50px;
+            img {
+              width: 80%;
+            }
+          }
+          div:last-child {
+            display: none;
+          }
+        }
+      }
+      //<!-- -----------------left_and_right_arrays-------------- -->
+      .arrows_container {
+        display: block;
+        padding-bottom: 30px;
+        text-align: center;
+        .arrow_wrapper {
+          padding: 15px 20px;
+          border: none;
+          border-radius: 50%;
+          margin: 0 20px;
+          background-color: rgb(213, 216, 181);
+        }
+      }
+      // <!-- ------------------all_write_container------------- -->
+      .all_write_container {
+        display: none;
+      }
+    }
+  }
+}
+// -----------------------------------------------------
+// -----------------------------------------------------
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media screen and (min-width: 900px) {
+  body {
+    main {
+      #slider-wrapper {
+        width: 100%;
+        height: 400px;
+        margin: 50px auto;
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      .inner-wrapper {
+        width: 100%;
+        min-height: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+// -------------------------------------------------------
+// -----------------------------------------------------
+@media screen and (min-width: 992px) {
+  body {
+    header {
+      // ------------first_navbar----------
+      nav {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0 10px 0;
+        background-color: rgba(245, 222, 179, 0.42);
+        .left_nav_side {
+          margin-left: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          opacity: 0.5;
+          a {
+            width: 34%;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+          }
+        }
+        .right_nav_side {
+          margin-right: 24px;
+          display: flex;
+          align-items: center;
+          select {
+            border: none;
+            background-color: transparent;
+          }
+          p {
+            padding: 0 20px;
+          }
+          button {
+            background-color: rgb(219, 22, 97);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+          }
+        }
+      }
+      // -----------second_nav------------
+      .second_nav {
+        width: 95%;
+        height: 120px;
+        margin: auto;
+        position: relative;
+        div {
+          display: inline-block;
+          margin: -10px;
+          .menu_text {
+            display: inline-block;
+            position: absolute;
+            right: 190px;
+            top: 80px;
+          }
+          div {
+            position: absolute;
+            display: inline-block;
+            right: 0;
+            top: 70px;
+            i:last-child {
+              display: none;
+            }
+            a {
+              button {
+                font-size: 15px;
+                padding: 10px 35px;
+                border-radius: 10px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    main {
+      // ---------------calculate--------------
+      .calculate_container {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 100px;
+        div:first-child {
+          width: 50%;
+          text-align: start;
+          p:first-child {
+            margin: auto;
+            width: 50%;
+            font-size: 35px;
+            font-weight: bolder;
+            padding: 20px 0;
+          }
+          p:last-child {
+            margin: auto;
+            text-align: start;
+            width: 50%;
+            display: block;
+            font-size: 15px;
+            opacity: 0.6;
+          }
+        }
+        form {
+          select {
+            width: 100%;
+            padding: 15px 10px;
+          }
+          //  ----------second_row-----------
+          .address_and_types_container {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 15px;
+            .address_child {
+              margin: 0;
+              margin-right: 10px;
+            }
+            .types_child {
+              margin: 0;
+            }
+          }
+          .metres_container {
+            width: 100%;
+            margin: 0;
+            .wide,
+            .long {
+              width: 100%;
+              margin: 0;
+              input {
+                width: 100%;
+                padding: 15px;
+              }
+              button {
+                padding: 15px 20px;
+                border: none;
+              }
+            }
+            .long {
+              margin-left: 10px;
+            }
+          }
+          .height_and_weight_container {
+            width: 100%;
+            margin: 15px 0;
+            .height_child {
+              width: 100%;
+              margin: 0;
+              input {
+                width: 100%;
+                padding: 15px;
+              }
+              button {
+                padding: 15px 20px;
+              }
+            }
+            .weight_child {
+              width: 100%;
+              margin: 0;
+              margin-left: 10px;
+              input {
+                width: 100%;
+                padding: 15px;
+              }
+            }
+          }
+          // ---------------account_container-------------
+          .account_container {
+            width: 50%;
+          }
+          .result_block {
+            width: 100%;
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+          }
+        }
+        // ----------------result_none------------------
+        #result {
+          display: none;
+        }
+      }
+      //<!-- ----------------rates_container---------------- -->
+      .rates_container {
+        .rates_wrapper {
+          .rates_flex_container {
+            display: flex;
+            .turk_and_usa_buttons {
+              text-align: start;
+              width: 25%;
+              p {
+                width: 90%;
+                margin: auto;
+                display: block;
+                font-size: 25px;
+                opacity: 0.6;
+                font-weight: bold;
+              }
+              .money_container {
+                button:first-child {
+                  border-radius: 15px;
+                  padding: 15px 50px;
+                  font-size: 22px;
+                }
+                button:last-child {
+                  border-radius: 15px;
+                  padding: 15px 62px;
+                  font-size: 22px;
+                }
+                .turkish {
+                  color: white;
+                }
+                .USA {
+                  background-color: transparent;
+                  border: 2px solid rgba(255, 0, 34, 0.797);
+                  color: rgba(255, 0, 34, 0.797);
+                }
+              }
+            }
+            .rates_child {
+              width: 75%;
+            }
+          }
+        }
+      }
+      //<!-- -----------------------news--------------- -->
+      .news_container {
+        .news_wrapper_second {
+          align-items: center;
+          div:last-child {
+            display: block;
+          }
+        }
+      }
+    }
+    // ----------------footer--------------
+    footer {
+      .flex_container {
+        width: 100%;
+        display: flex;
+        // -----------left-side-------------
+        .left_flex_side {
+          padding: 10px;
+          .footer_first_text {
+            padding-top: 20px;
+            display: flex;
+            color: rgba(255, 255, 255, 0.36);
+            i {
+              padding-right: 10px;
+            }
+          }
+          .social_icons {
+            margin-top: 50px;
+            text-align: start;
+            button {
+              padding: 5px 8px;
+              i {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+        //<!-- ---------------middle----------------- -->
+        .middle_flex_container {
+          width: 100%;
+          margin: 0;
+          .middle_flex_wrapper {
+            text-align: start;
+            padding: 40px 0;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            .menu_footer {
+              padding-left: 100px;
+            }
+            .help_footer {
+              padding-left: 70px;
+            }
+            h3 {
+              padding-bottom: 50px;
+            }
+          }
+        }
+        //<!-- -----------------right_side---------------- -->
+        .right_flex_side {
+          margin: 0;
+          width: 80%;
+          h3 {
+            padding: 50px 0;
+          }
+          .footer_all_menu {
+            .footer_number_and_call_icon {
+              justify-content: flex-start;
+              margin: 20px 0;
+            }
+            // -------------button---------------
+            .button_container {
+              width: 100%;
+              padding-bottom: 50px;
+              justify-content: flex-start;
+              .g-play {
+                margin-right: 30px;
+              }
+            }
+            // -----------footer_last_text------------
+            .footer_last_text_and_icon {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// -----------------------------------------------------
+// -----------------------------------------------------
+@media screen and (min-width: 1075px) {
+  body {
+    header {
+      // -----------second_nav------------
+      .second_nav {
+        position: static;
+        padding: 25px 0;
+        div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .menu_text {
+            display: block;
+            position: static;
+            right: 0;
+            top: 0;
+          }
+          div {
+            position: static;
+            display: block;
+            right: 0;
+            top: 0;
+            i:last-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// -----------------------------------------------------
+// -----------------------------------------------------
+@media screen and (min-width: 1148px) {
+  body {
+    header {
+      // ------------first_navbar----------
+      nav {
+        .left_nav_side {
+          width: 60%;
+          .nav_number_and_call_icon {
+            display: flex;
+            i {
+              padding-right: 10px;
+            }
+          }
+          a {
+            display: inline-block;
+            width: 100%;
+            padding: 0 30px;
+          }
+        }
+      }
+    }
+  }
+}
+// --------------------------------------------------------
+// --------------------------------------------------------
+@media screen and (min-width: 1200px) {
+  body {
+    main {
+      #slider-wrapper {
+        width: 100%;
+        height: 550px;
+        margin: 50px auto;
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      .inner-wrapper {
+        width: 100%;
+        min-height: 550px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+        overflow: hidden;
+      }
+      #s1,
+      #s2,
+      #s3,
+      #s4 {
+        padding: 8px;
+        bottom: 25px;
+      }
+    }
+  }
+}
+// -------------------------------------------------------

@@ -1,0 +1,653 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body header nav {
+  display: none;
+}
+body header .second_nav {
+  width: 100%;
+  height: 80%;
+}
+body header .second_nav div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  align-items: center;
+  padding: 10px 0;
+}
+body header .second_nav div img {
+  width: 100px;
+}
+body header .second_nav div .menu_text {
+  display: none;
+}
+body header .second_nav div div i {
+  font-size: 20px;
+}
+body header .second_nav div div a {
+  text-decoration: none;
+  color: black;
+  padding: 0 20px;
+}
+body header .second_nav div div a button {
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+body header .second_nav div div a button:hover {
+  background-color: rgb(219, 22, 97);
+  color: white;
+}
+body main #slider-wrapper {
+  width: 100%;
+  height: 170px;
+  margin: 50px auto;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+body main #s1,
+body main #s2,
+body main #s3,
+body main #s4 {
+  padding: 4px;
+  background: #070606;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  border-radius: 20px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 999;
+}
+body main #s1 {
+  margin-left: -36px;
+}
+body main #s2 {
+  margin-left: -12px;
+}
+body main #s3 {
+  margin-left: 12px;
+}
+body main #s4 {
+  margin-left: 36px;
+}
+body main #s1:hover,
+body main #s2:hover,
+body main #s3:hover,
+body main #s4:hover {
+  opacity: 1;
+}
+body main .inner-wrapper {
+  width: 100%;
+  min-height: 170px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+body main .control {
+  display: none;
+}
+body main #Slide1:checked ~ .overflow-wrapper {
+  margin-left: 0%;
+}
+body main #Slide2:checked ~ .overflow-wrapper {
+  margin-left: -100%;
+}
+body main #Slide3:checked ~ .overflow-wrapper {
+  margin-left: -200%;
+}
+body main #Slide4:checked ~ .overflow-wrapper {
+  margin-left: -300%;
+}
+body main #Slide1:checked + #s1 {
+  opacity: 1;
+}
+body main #Slide2:checked + #s2 {
+  opacity: 1;
+}
+body main #Slide3:checked + #s3 {
+  opacity: 1;
+}
+body main #Slide4:checked + #s4 {
+  opacity: 1;
+}
+body main .overflow-wrapper {
+  width: 400%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+body main .slide img {
+  width: 25%;
+  float: left;
+}
+body main .icons_container {
+  text-align: center;
+}
+body main .icons_container p:first-child {
+  margin: 40px 0 60px 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+body main .icons_container .icons_wrapper {
+  display: none;
+}
+body main .icons_container .icons_wrapper .icons_child {
+  width: 90%;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+body main .icons_container .icons_wrapper .icons_child:hover {
+  box-shadow: rgba(18, 18, 19, 0.2) 0px 7px 55px 0px;
+  transition: all 0.5s;
+}
+body main .icons_container .icons_wrapper .icons_child button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 34, 0.727);
+  margin-bottom: 25px;
+}
+body main .icons_container .icons_wrapper .icons_child button i {
+  font-size: 50px;
+  color: white;
+}
+body main .icons_container .icons_wrapper .icons_child p {
+  margin-bottom: 8px;
+}
+body main .icons_container .icons_wrapper .icons_child p:nth-child(2) {
+  font-weight: bold;
+  font-size: 20px;
+}
+body main .icons_container .icons_wrapper .icons_child a {
+  text-decoration: none;
+  color: rgb(0, 187, 255);
+}
+body main .calculate_container div:first-child {
+  text-align: center;
+}
+body main .calculate_container div:first-child p {
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 20px 0;
+}
+body main .calculate_container div:first-child p:last-child {
+  display: none;
+}
+body main .calculate_container form {
+  text-align: center;
+}
+body main .calculate_container form select {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+body main .calculate_container form .metres_container {
+  width: 90%;
+  margin: 5px auto;
+}
+body main .calculate_container form .metres_container .wide,
+body main .calculate_container form .metres_container .long {
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+body main .calculate_container form .metres_container .wide input,
+body main .calculate_container form .metres_container .long input {
+  width: 90%;
+  padding: 10px 15px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+body main .calculate_container form .metres_container .wide button,
+body main .calculate_container form .metres_container .long button {
+  background-color: rgba(255, 0, 34, 0.525);
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+body main .calculate_container form .metres_container .long {
+  margin: 15px 0;
+}
+body main .calculate_container form .height_and_weight_container {
+  width: 90%;
+  margin: 5px auto;
+}
+body main .calculate_container form .height_and_weight_container .height_child {
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+body main .calculate_container form .height_and_weight_container .height_child input {
+  width: 90%;
+  padding: 10px 15px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+body main .calculate_container form .height_and_weight_container .height_child button {
+  background-color: rgba(255, 0, 34, 0.525);
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+body main .calculate_container form .height_and_weight_container .weight_child {
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+body main .calculate_container form .height_and_weight_container .weight_child input {
+  width: 90%;
+  border: 1px solid black;
+  border: none;
+  padding: 10px 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+body main .calculate_container form .height_and_weight_container .weight_child select {
+  background-color: rgba(255, 0, 34, 0.525);
+  width: 65px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+body main .calculate_container form .account_container {
+  width: 90%;
+  margin: auto;
+}
+body main .calculate_container form .account_container input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 34, 0.797);
+}
+body main .calculate_container #result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+body main .result_block {
+  display: none;
+}
+body main .rates_container {
+  text-align: center;
+}
+body main .rates_container .rates_text {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+body main .rates_container .rates_wrapper {
+  background-color: rgba(218, 155, 20, 0.681);
+}
+body main .rates_container .rates_wrapper .rates_child_text p {
+  font-size: 15px;
+  font-weight: 100;
+  padding-bottom: 5px;
+}
+body main .rates_container .rates_wrapper .rates_child_text .filial {
+  margin: auto;
+  width: 110px;
+  padding-top: 30px;
+  border-bottom: 3px solid rgba(255, 0, 34, 0.797);
+}
+body main .rates_container .rates_wrapper .rates_flex_container {
+  width: 100%;
+}
+body main .rates_container .rates_wrapper .rates_flex_container .turk_and_usa_buttons p {
+  display: none;
+}
+body main .rates_container .rates_wrapper .rates_flex_container .turk_and_usa_buttons .money_container {
+  text-align: start;
+  width: 90%;
+  margin: auto;
+}
+body main .rates_container .rates_wrapper .rates_flex_container .turk_and_usa_buttons .money_container button {
+  margin-top: 30px;
+  background-color: rgba(255, 0, 34, 0.797);
+  border: rgba(255, 0, 34, 0.797);
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+body main .rates_container .rates_wrapper .rates_flex_container .turk_and_usa_buttons .money_container .turkish {
+  color: white;
+}
+body main .rates_container .rates_wrapper .rates_flex_container .turk_and_usa_buttons .money_container .USA {
+  background-color: transparent;
+  border: 2px solid rgba(255, 0, 34, 0.797);
+  color: rgba(255, 0, 34, 0.797);
+}
+body main .rates_container .rates_wrapper .rates_flex_container .rates_child {
+  padding-bottom: 30px;
+}
+body main .rates_container .rates_wrapper .rates_flex_container .rates_child .borders_container {
+  width: 90%;
+  margin: 15px auto;
+  text-align: start;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.736) 0px 7px 55x 0px;
+}
+body main .rates_container .rates_wrapper .rates_flex_container .rates_child .borders_container div:first-child .first_write {
+  padding: 10px 0 20px 20px;
+  font-weight: bold;
+}
+body main .rates_container .rates_wrapper .rates_flex_container .rates_child .borders_container .flex_text {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+body main .rates_container .rates_wrapper .rates_flex_container .rates_child .borders_container .flex_text .pale_text {
+  color: rgba(0, 0, 0, 0.551);
+}
+body main .news_container .news_wrapper_first p {
+  display: none;
+}
+body main .news_container .news_wrapper_first .news_child {
+  text-align: center;
+}
+body main .news_container .news_wrapper_first .news_child h3 {
+  padding: 20px 0;
+}
+body main .news_container .news_wrapper_first .news_child p {
+  display: none;
+}
+body main .news_container .news_wrapper_second {
+  width: 90%;
+  margin: auto;
+}
+body main .news_container .news_wrapper_second div:first-child img {
+  width: 100%;
+  border-radius: 10px;
+}
+body main .news_container .news_wrapper_second div:first-child p:nth-child(2) {
+  margin: 10px 0;
+}
+body main .news_container .news_wrapper_second div:last-child {
+  margin-top: 25px;
+}
+body main .news_container .news_wrapper_second div:last-child img {
+  width: 100%;
+  border-radius: 10px;
+}
+body main .news_container .news_wrapper_second div:last-child p:nth-child(2) {
+  margin: 10px 0;
+}
+body main .arrows_container {
+  display: none;
+}
+body main .all_write_container {
+  text-align: center;
+  margin-top: 30px;
+}
+body main .all_write_container a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.589);
+}
+body main .youtube_container {
+  width: 100%;
+  margin-top: 25px;
+}
+body main .youtube_container div:first-child {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main .youtube_container div:first-child h3 {
+  color: white;
+  background-color: rgb(255, 0, 34);
+  padding: 15px 0 15px 60px;
+}
+body main .youtube_container div:first-child div:nth-child(2) {
+  position: absolute;
+  bottom: 2px;
+  left: -13px;
+}
+body main .youtube_container div:first-child div:nth-child(2) img:first-child {
+  width: 70px;
+}
+body main .youtube_container .photo_pagenation {
+  position: relative;
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: rgba(203, 203, 203, 0.51);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+}
+body main .youtube_container .photo_pagenation .photoss {
+  width: 100%;
+}
+body main .youtube_container .photo_pagenation .photoss img:first-child {
+  width: 60%;
+  margin: 0 60px;
+}
+body main .youtube_container .photo_pagenation .photoss img:last-child {
+  display: none;
+}
+body main .youtube_container .photo_pagenation div:nth-child(2) p:first-child {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+body main .youtube_container .photo_pagenation div:nth-child(2) p:first-child span {
+  display: none;
+}
+body main .youtube_container .photo_pagenation div:nth-child(2) p:last-child {
+  display: none;
+}
+body main .youtube_container .photo_pagenation .left_arrow {
+  position: absolute;
+  left: 15px;
+  top: 150px;
+  padding: 8px;
+  color: white;
+  background-color: rgba(255, 0, 34, 0.797);
+  border: none;
+  border-radius: 15px;
+}
+body main .youtube_container .photo_pagenation .right_arrow {
+  position: absolute;
+  right: 15px;
+  top: 150px;
+  padding: 8px;
+  color: white;
+  background-color: rgba(255, 0, 34, 0.797);
+  border: none;
+  border-radius: 15px;
+}
+body main .slide_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+body main .slide_container .slide_wrapper {
+  width: 90%;
+}
+body main .slide_container .slide_wrapper img {
+  width: 80px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+body main .slide_container .trendyol {
+  display: none;
+}
+body main .slide_container .pierre_cardin {
+  display: none;
+}
+body main .slide_container .mango img {
+  width: 110px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+body footer {
+  background-color: indigo;
+}
+body footer .flex_container .left_flex_side .flex_logo {
+  display: flex;
+  justify-content: center;
+}
+body footer .flex_container .left_flex_side .flex_logo img {
+  width: 170px;
+  margin-top: 40px;
+}
+body footer .flex_container .left_flex_side .footer_first_text {
+  display: none;
+}
+body footer .flex_container .left_flex_side .social_icons {
+  margin-top: 35px;
+  text-align: center;
+}
+body footer .flex_container .left_flex_side .social_icons button {
+  padding: 10px 13px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.757);
+  background-color: transparent;
+  margin: 0 5px;
+  cursor: pointer;
+}
+body footer .flex_container .left_flex_side .social_icons button:hover {
+  border: 1px solid red;
+}
+body footer .flex_container .left_flex_side .social_icons button i {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.757);
+}
+body footer .flex_container .left_flex_side .social_icons button i:hover {
+  color: red;
+}
+body footer .flex_container .middle_flex_container {
+  width: 90%;
+  margin: auto;
+}
+body footer .flex_container .middle_flex_container .middle_flex_wrapper {
+  padding: 40px 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+body footer .flex_container .middle_flex_container .middle_flex_wrapper h3 {
+  color: white;
+  padding: 10px 0;
+}
+body footer .flex_container .middle_flex_container .middle_flex_wrapper p {
+  color: rgba(255, 255, 255, 0.519);
+  padding: 10px 0;
+}
+body footer .flex_container .right_flex_side {
+  margin: auto;
+  width: 90%;
+}
+body footer .flex_container .right_flex_side h3 {
+  color: white;
+  padding: 40px 0;
+}
+body footer .flex_container .right_flex_side .footer_all_menu {
+  width: 100%;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .f-m {
+  display: flex;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .f-m i {
+  color: rgba(255, 255, 255, 0.519);
+}
+body footer .flex_container .right_flex_side .footer_all_menu .f-m p {
+  color: rgba(255, 255, 255, 0.519);
+}
+body footer .flex_container .right_flex_side .footer_all_menu .footer_address_and_map_icon .map_icon {
+  margin: auto 0;
+  margin-right: 10px;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .footer_message_and_contact {
+  margin-top: 20px;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .footer_message_and_contact i {
+  padding: 15px 5px 5px 0;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .footer_number_and_call_icon {
+  margin-top: 20px;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .footer_number_and_call_icon i {
+  padding-right: 5px;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .button_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .button_container .g-a-play {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.519);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.519);
+  padding: 5px;
+  border-radius: 5px;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .button_container .g-a-play div:first-child {
+  font-size: 30px;
+  padding-right: 8px;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .button_container .g-a-play div:last-child {
+  text-align: start;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .button_container .g-a-play div:last-child p:first-child {
+  font-size: 10px;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .button_container .g-a-play div:last-child p:last-child b {
+  font-size: 17px;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .footer_last_text_and_icon {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+body footer .flex_container .right_flex_side .footer_all_menu .footer_last_text_and_icon i {
+  padding-right: 5px;
+}/*# sourceMappingURL=dynamex.css.map */
